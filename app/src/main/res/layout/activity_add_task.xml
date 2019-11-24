@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddTaskActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/outerMargin"
+        android:layout_marginEnd="@dimen/outerMargin"
+        android:text="Welcome to adding a new task page!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/outerMargin"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <EditText
+        android:id="@+id/newTaskName"
+        android:layout_width="@dimen/addTaskWidth"
+        android:layout_height="@dimen/addTaskHeight"
+        android:hint="Name of Task"
+        app:layout_constraintStart_toStartOf="@+id/taskNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/taskNameTextView" />
+
+    <EditText
+        android:id="@+id/newTaskTime"
+        android:layout_width="@dimen/addTaskWidth"
+        android:layout_height="@dimen/addTaskHeight"
+        android:hint="Time of Task"
+        app:layout_constraintStart_toStartOf="@+id/taskTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/taskTimeTextView" />
+
+    <TextView
+        android:id="@+id/taskTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:text="Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskName" />
+
+    <TextView
+        android:id="@+id/taskDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskTime" />
+
+    <EditText
+        android:id="@+id/newTaskDescription"
+        android:layout_width="@dimen/addTaskWidth"
+        android:layout_height="@dimen/addTaskHeight"
+        android:hint="Description of Task"
+        app:layout_constraintStart_toStartOf="@+id/taskDescriptionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/DisplayContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="64dp"
+        android:text="This is a test text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newTaskDescription" />
+
+    <Button
+        android:id="@+id/saveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/outerMargin"
+        android:layout_marginBottom="@dimen/outerMargin"
+        android:onClick="saveTask"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

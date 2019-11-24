@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="addTaskWidth">300dp</dimen>
+    <dimen name="addTaskHeight">60dp</dimen>
+    <dimen name="outerMargin">32dp</dimen>
+    <dimen name="innerMargin">16dp</dimen>
+</resources>

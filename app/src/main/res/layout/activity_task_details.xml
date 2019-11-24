@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.TaskDetails">
+
+    <TextView
+        android:id="@+id/task_details_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/outerMargin"
+        android:layout_marginEnd="@dimen/outerMargin"
+        android:text="Welcome to adding a new task page!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/task_details_NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/outerMargin"
+        android:text="Name" />
+
+
+    <TextView
+        android:id="@+id/task_details_taskTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/task_details_taskDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/outerMargin"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:text="Description" />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_taskList_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/API_feedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code: "
+        app:layout_constraintTop_toBottomOf="@id/fragment_taskList_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskList_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerMargin"
+        app:layout_constraintTop_toBottomOf="@id/API_feedBack" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
